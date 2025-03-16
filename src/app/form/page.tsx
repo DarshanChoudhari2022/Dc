@@ -24,29 +24,26 @@ export default function BENFormPage() {
     email: "",
     phone: "",
     address: "",
-
+  
     // Employment Type
     employmentType: "", // "selfEmployed" or "ownBusiness"
-
-    // Self-Employment Information
-    isSelfEmployed: "",
-    areaOfExpertise: "",
-
-    // Employment Details
-    employer: "",
-    areaOfWork: "",
-    workExperience: "",
-
-    // Business Overview
+  
+    // Business Overview (for business owners)
     businessName: "",
     businessDescription: "",
-    businessSocialMedia: "",
     businessWebsite: "",
+    businessSocialMedia: "",
+  
+    // Professional Details (for self-employed/consultants)
+    areaOfExpertise: "",
+    areaOfWork: "",
+    workExperience: "",
+  
     // Services & Requirements
     servicesOffered: "",
     lookingFor: "",
-
-    // Additional Information
+  
+    // Agreement
     agreeToRules: false,
   })
 
@@ -346,7 +343,7 @@ export default function BENFormPage() {
                   </CardHeader>
 
                   <CardContent className="space-y-6">
-                    <div className="space-y-4">
+                    {/* <div className="space-y-4">
                       <Label>Are you self-employed? *</Label>
                       <RadioGroup
                         value={formData.isSelfEmployed}
@@ -362,7 +359,7 @@ export default function BENFormPage() {
                           <Label htmlFor="self-employed-no">No</Label>
                         </div>
                       </RadioGroup>
-                    </div>
+                    </div> */}
 
                     <div className="space-y-4">
                       <Label htmlFor="areaOfExpertise">What is your area of expertise? *</Label>
